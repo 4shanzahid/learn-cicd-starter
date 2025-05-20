@@ -21,6 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Style
-        run: go fmt
+        run: go fmt ./...
       - name: Check Style
-        run: test -z $(go fmt)
+        run: test -z $(go fmt ./...)
